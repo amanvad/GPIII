@@ -8,3 +8,5 @@ total_log = len(log_file)
 print("This is how many total requests were made in the past 6 months: ",)
 
 print("This is how many total requests were made in the time period: ", total_log)
+
+print(total_log[0])
