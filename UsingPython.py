@@ -2,11 +2,11 @@ from urllib.request import urlopen
 
 log_file = urlopen("https://s3.amazonaws.com/tcmg476/http_access_log").read()
 
-total_log = len(log_file)
+log_total = len(log_file)
 
 
 print("This is how many total requests were made in the past 6 months: ",)
 
-print("This is how many total requests were made in the time period: ", total_log)
+print("This is how many total requests were made in the time period: ", log_total)
 
-print(total_log[0])
+print(log_file[0])
