@@ -1,6 +1,8 @@
 from urllib.request import urlopen
 
-log_file = urlopen("https://s3.amazonaws.com/tcmg476/http_access_log").read()
+log_raw_file = urlopen("https://s3.amazonaws.com/tcmg476/http_access_log")
+
+log_file = log_raw_file.read()
 
 log_total = len(log_file)
 
