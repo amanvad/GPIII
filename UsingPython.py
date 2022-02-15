@@ -1,4 +1,4 @@
-from urllib.request import urlopen
+import urllib.request
 
 # log_raw_file = urlopen("https://s3.amazonaws.com/tcmg476/http_access_log")
 # log_read = log_raw_file.read()
