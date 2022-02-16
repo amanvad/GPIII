@@ -11,7 +11,7 @@ import urllib.request
 
    
 
-get_file = urllib.request.urlretrieve("https://s3.amazonaws.com/tcmg476/http_access_log")
+get_file = urllib.request.urlretrieve("https://s3.amazonaws.com/tcmg476/http_access_log", "get_file")
 
 open_file = open("get_file", "r")
 
