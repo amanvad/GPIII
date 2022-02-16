@@ -11,11 +11,11 @@ open_file = urllib.request.urlretrieve("https://s3.amazonaws.com/tcmg476/http_ac
 
 log_file = open("open_file", "r")
 
-log_file = log_file.split("\n")
+split_file = log_file.split("\n")
 
-log_total = len(log_file)
+log_total = len(split_file)
 
-print(log_file[0])
+print(split_file[0])
 
 print("This is how many total requests were made in the past 6 months: ",)
 
