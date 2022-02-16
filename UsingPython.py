@@ -17,7 +17,7 @@ open_file = open("get_file", "r")
 
 read_file = open_file.read()
 
-split_file = open_file.split("\n")
+split_file = read_file.split("\n")
 
 log_total = len(split_file)
 
