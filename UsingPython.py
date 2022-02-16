@@ -16,6 +16,6 @@ for log in split_file:
     if six_month_start == True:
         six_month_total += 1
         
-print(\n)            
+print(\n)
 print("This is how many total requests were made in the past 6 months: ", six_month_total)
 print("This is how many total requests were made in the time period: ", log_total)
