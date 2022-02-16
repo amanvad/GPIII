@@ -19,5 +19,3 @@ for log in split_file:
 print(/n)            
 print("This is how many total requests were made in the past 6 months: ", six_month_total)
 print("This is how many total requests were made in the time period: ", log_total)
-
-
