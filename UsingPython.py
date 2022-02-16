@@ -7,7 +7,7 @@ import urllib.request
 #   log_file = open_log.read()
    
 
-open_file = urlib.request.urlretrieve("https://s3.amazonaws.com/tcmg476/http_access_log")
+open_file = urllib.request.urlretrieve("https://s3.amazonaws.com/tcmg476/http_access_log", "open_file")
 
 log_file = open("open_file", "r")
 
