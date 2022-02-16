@@ -1,6 +1,7 @@
 import os.path
 import urllib.request
 
+# IF FILE DOES NOT EXISTS, FILE DOWNLOADS
 if os.path.isfile("get_file") == False:
     print('\n')
     print("Downloading file...")
@@ -8,7 +9,8 @@ if os.path.isfile("get_file") == False:
     
 print('\n')
 print("Counting requests...")
-    
+
+# SPLITS FILE BY LINE INTO A LIST
 open_file = open("get_file", "r")
 read_file = open_file.read()
 split_file = read_file.split('\n')
@@ -17,6 +19,7 @@ log_total = len(split_file)
 six_month_start = False
 six_month_total = 0
 
+# LOOP TO COUNT REQUESTS MADE SIX MONTHS PRIOR
 for log in split_file:
     if "11/Apr/1995:00:00:16" in log:
         six_month_start = True
