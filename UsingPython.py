@@ -26,3 +26,4 @@ for log in split_file:
 print('\n')
 print(f"There were {six_month_total} requests made in the past 6 months.")
 print(f"There were {log_total} requests made in the entire time period.")
+print('\n')
