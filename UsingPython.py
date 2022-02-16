@@ -3,7 +3,7 @@ import urllib.request
 get_file = urllib.request.urlretrieve("https://s3.amazonaws.com/tcmg476/http_access_log", "get_file")
 open_file = open("get_file", "r")
 read_file = open_file.read()
-split_file = read_file.split(\n)
+split_file = read_file.split('\n')
 
 log_total = len(split_file)
 
