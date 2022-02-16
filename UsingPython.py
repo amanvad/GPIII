@@ -24,7 +24,7 @@ log_total = len(split_file)
 six_month_start = False
 six_month_total = 0
             
-for log in splitfile:
+for log in split_file:
     if "11/Apr/1995:00:00:16" in log:
         six_month_start = True
     if six_month_start == True:
