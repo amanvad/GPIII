@@ -21,6 +21,6 @@ for log in split_file:
         six_month_total += 1
 
 print('\n')
-fprint("There were {six_month_total} requests made in the past 6 months.")
-fprint("There were {log_total} requests made in the entire time period.")
+print(f"There were {six_month_total} requests made in the past 6 months.")
+print(f"There were {log_total} requests made in the entire time period.")
 print('\n')
