@@ -9,9 +9,12 @@ import urllib.request
 
 open_file = urllib.request.urlretrieve("https://s3.amazonaws.com/tcmg476/http_access_log", "open_file")
 
-log_file = open("open_file", "r")
+with open(open_file) as log_file:
+    log_list = list(log_file)
 
-split_file = log_file.split("\n")
+# log_file = open("open_file", "r")
+
+# split_file = log_file.split("\n")
 
 log_total = len(split_file)
 
