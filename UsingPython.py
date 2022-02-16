@@ -5,16 +5,19 @@ import urllib.request
 # log_file = open("log_read", "r")
 # with urllib.request.urlopen("https://s3.amazonaws.com/tcmg476/http_access_log") as open_log:
 #   log_file = open_log.read()
+# with open("open_file") as log_file:
+    # log_list = list(log_file)
    
 
-open_file = urllib.request.urlretrieve("https://s3.amazonaws.com/tcmg476/http_access_log", "open_file")
+   
 
-with open(open_file) as log_file:
-    log_list = list(log_file)
+get_file = urllib.request.urlretrieve("https://s3.amazonaws.com/tcmg476/http_access_log")
 
-# log_file = open("open_file", "r")
+open_file = open("get_file", "r")
 
-# split_file = log_file.split("\n")
+read_file = open_file.read()
+
+split_file = open_file.split("\n")
 
 log_total = len(split_file)
 
